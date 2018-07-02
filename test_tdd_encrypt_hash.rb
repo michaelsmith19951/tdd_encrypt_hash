@@ -27,4 +27,11 @@ class TestTddEncryptHash < Minitest::Test
 		letters_right_end = [*"a".."e"]
 		assert_equal(letters_right_end[0], "a")
 	end
+
+	def test_positions_moved_variables
+		letters_shifted = [*"f".."z"]
+		letters_right_end = [*"a".."e"]
+		moved = letters_shifted + letters_right_end
+		assert_equal(moved[0], "e")
+	end
 end
