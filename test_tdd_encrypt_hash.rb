@@ -20,6 +20,6 @@ class TestTddEncryptHash < Minitest::Test
 
 	def test_if_new_position_zero_equals_f
 		letters_shifted = [*"f".."z"]
-		assert_equal(letters_shifted[0], "k")
+		assert_equal(letters_shifted[0], "f")
 	end
 end
