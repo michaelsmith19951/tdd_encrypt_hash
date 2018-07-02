@@ -2,7 +2,7 @@
 
 
 # Function for all of the letters, as an array
-	def letter(alphabet)
+	def encrypt(alphabet)
 	letters = ("a".."z").to_a
 	letters_shifted = ("f".."z").to_a
 	letters_right_end = ("a".."e").to_a
