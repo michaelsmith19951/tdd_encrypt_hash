@@ -25,6 +25,6 @@ class TestTddEncryptHash < Minitest::Test
 
 	def test_if_new_letters_are_right_end
 		letters_right_end = [*"a".."e"]
-		assert_equal(letters_right_end[0], "d")
+		assert_equal(letters_right_end[0], "a")
 	end
 end
