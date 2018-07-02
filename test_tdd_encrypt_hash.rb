@@ -9,6 +9,6 @@ class TestTddEncryptHash < Minitest::Test
 
 # Functions for each test
 	def test_if_hash_is_class
-		assert_equal(Hash, letter({}).class)
+		assert_equal(Array, letter({}).class)
 	end
 end
