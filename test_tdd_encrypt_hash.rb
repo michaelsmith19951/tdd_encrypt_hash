@@ -15,6 +15,6 @@ class TestTddEncryptHash < Minitest::Test
 
 	def test_if_letter_position_is_correct
 		letters = [*"a".."z"]
-		assert_equal(letters[1], "g")
+		assert_equal(letters[1], "b")
 	end
 end
