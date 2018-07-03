@@ -10,7 +10,7 @@
 # Function that decodes the message
 	def decode(moved)
 		if moved[21] != nil
-			moved.delete_at[21]
+			moved.drop[21]
 		end
 				
 	end
