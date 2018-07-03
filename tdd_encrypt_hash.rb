@@ -9,11 +9,13 @@
 
 # Function that decodes the message
 	def decode(moved)
-		i = 25
-			if i >= 21
-				moved.drop[i]
-				i -= 1
-			end
+		if moved[21] != nil
+			moved.delete_at[21]
+		end
+				
 	end
+
+
+
 
 
