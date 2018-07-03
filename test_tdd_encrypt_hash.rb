@@ -55,4 +55,9 @@ class TestTddEncryptHash < Minitest::Test
 		original = original_left + moved
 		assert_equal(original[0], "a")
 	end
+
+	def test_need_returns_rj
+		assert_equal("rj", encrypt("me"))
+	end
 end
+

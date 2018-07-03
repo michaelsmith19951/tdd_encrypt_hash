@@ -4,8 +4,21 @@
 	letters_shifted = ("f".."z").to_a
 	letters_right_end = ("a".."e").to_a
 	moved = letters_shifted + letters_right_end
-	return moved
+	arr = "me".split("")
+	enc_arr = []
+	arr.each do |letter|
+		counter = 0
+	letters.each do |let|
+		counter += 1
+			if let == letter
+			enc_arr << counter
+				end
+				end
+			end
+			enc_arr
+
 	end
+
 
 # Function that decodes the message
 	def decode(moved)
