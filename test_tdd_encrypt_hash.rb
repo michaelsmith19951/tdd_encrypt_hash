@@ -53,6 +53,6 @@ class TestTddEncryptHash < Minitest::Test
 		moved = [*"f".."z"]
 		original_left = [*"a".."e"]
 		original = original_left + moved
-		assert_equal(original[0], "f")
+		assert_equal(original[0], "a")
 	end
 end
