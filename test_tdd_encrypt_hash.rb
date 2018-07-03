@@ -35,17 +35,24 @@ class TestTddEncryptHash < Minitest::Test
 		assert_equal(moved[2], "h")
 	end
 
-	def test_position_21_after_drop
-		letters_shifted = [*"f".."z"]
-		letters_right_end = [*"a".."e"]
-		moved = letters_shifted + letters_right_end
-		assert_equal(decode(moved[21]), nil)
-	end
+	# def test_position_21_after_drop
+	# 	letters_shifted = [*"f".."z"]
+	# 	letters_right_end = [*"a".."e"]
+	# 	moved = letters_shifted + letters_right_end
+	# 	assert_equal(decode(moved[21]), nil)
+	# end
 
-	def test_position_20_after_drop
-		letters_shifted = [*"f".."z"]
-		letters_right_end = [*"a".."e"]
-		moved = letters_shifted + letters_right_end
-		assert_equal(moved[20], "z")
+	# def test_position_20_after_drop
+	# 	letters_shifted = [*"f".."z"]
+	# 	letters_right_end = [*"a".."e"]
+	# 	moved = letters_shifted + letters_right_end
+	# 	assert_equal(moved[20], "z")
+	# end
+
+	def test_restored_alphabet
+		moved = [*"f".."z"]
+		original_left = [*"a".."e"]
+		original = original_left + moved
+		assert_equal(original[0], "f")
 	end
 end
